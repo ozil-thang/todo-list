@@ -10,7 +10,7 @@ export default class TodoList extends Component {
                 {
                     items.map(item => {
                         return (
-                            <TodoItem key={item.id} title={item.title} handleDelete={() => handleDelete(item.id)} handleEdit={() => handleEdit(item.id)}/>
+                            <TodoItem key={item.id} item={item} handleDelete={() => handleDelete(item.id)} handleEdit={() => handleEdit(item.id)}/>
                         )
                     })
                 }
